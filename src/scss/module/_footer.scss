@@ -1,0 +1,17 @@
+footer{
+  width: 100vw;
+  background-color: rgba(#1E1C1C,0.6);
+  background-blend-mode: multiply;
+  background-image: url('../img/pexels-josh-kobayashi-4083586.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .btn{
+    border: 0;
+  }
+  .footer_logo{
+    background-image: url('../img/footer\ logo.svg');
+    width: 294px;
+    height: 38px;
+  }
+}

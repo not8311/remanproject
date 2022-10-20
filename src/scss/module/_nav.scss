@@ -1,0 +1,23 @@
+.navbar{
+  .navbar-brand{
+    width: 208px;
+    height: 63px;
+    background-image: url('../img/logo.svg');
+  }
+  .nav-item{
+    margin-left: 0.5rem;
+    .nav-link{
+      color: #fff;
+      font-weight: normal;
+      &:hover{
+        border-bottom: 2px solid ;
+      }
+    }
+  }
+  .navbar-toggler{
+    border: none;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
