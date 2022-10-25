@@ -1,3 +1,5 @@
+@import "../helpers/mixin";
+
 footer{
   width: 100vw;
   background-color: rgba(#1E1C1C,0.6);
@@ -11,7 +13,6 @@ footer{
   }
   .footer_logo{
     background-image: url('../img/footer\ logo.svg');
-    width: 294px;
-    height: 38px;
+    @include size(38px,294px);
   }
 }

@@ -13,6 +13,9 @@
         border-bottom: 2px solid ;
       }
     }
+    .dropdown-toggle::after{
+      display: none;
+    }
   }
   .navbar-toggler{
     border: none;

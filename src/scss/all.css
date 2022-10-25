@@ -15,6 +15,9 @@
 .navbar .nav-item .nav-link:hover {
   border-bottom: 2px solid;
 }
+.navbar .nav-item .dropdown-toggle::after {
+  display: none;
+}
 .navbar .navbar-toggler {
   border: none;
 }
@@ -77,8 +80,8 @@ footer .btn {
 }
 footer .footer_logo {
   background-image: url("../img/footer logo.svg");
-  width: 294px;
   height: 38px;
+  width: 294px;
 }
 
 .newMessage .card {
