@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reman Taiwan</title>
 </head>
-<body class="bg-dark bannerBg">
+<body class="bg-dark bannerBgSmall">
   <nav class="navbar navbar-expand-lg nav-secondary bg-secondary sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#"></a>
@@ -15,39 +15,39 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">拉麵介紹</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">拉麵介紹</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">湯底</a></li>
+                <li><a class="dropdown-item" href="#">地方風味</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">會員專區</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              年度台灣拉麵愛好會排名
+            </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">湯底</a></li>
-              <li><a class="dropdown-item" href="#">地方風味</a></li>
+              <li><a class="dropdown-item" href="#">2021年</a></li>
+              <li><a class="dropdown-item" href="#">2020年</a></li>
+              <li><a class="dropdown-item" href="#">2019年</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">會員專區</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            年度台灣拉麵愛好會排名
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">2021年</a></li>
-            <li><a class="dropdown-item" href="#">2020年</a></li>
-            <li><a class="dropdown-item" href="#">2019年</a></li>
-          </ul>
-          </li>
-          <li class="btn-group nav-item" role="group" aria-label="Basic outlined example">
-            <a class="nav-link text-light">註冊</a>
-            <span class="text-light align-self-center mx-1">|</span>
-            <a class="nav-link text-light">登入</a>
-          </li>
+            </li>
+            <li class="btn-group nav-item" role="group" aria-label="Basic outlined example">
+              <a class="nav-link text-light">註冊</a>
+              <span class="text-light align-self-center mx-1">|</span>
+              <a class="nav-link text-light">登入</a>
+            </li>
         </ul>
       </div>
     </div>
   </nav>
   <section class="banner container-fluid pb-xl-5 mb-xl-5">
     <div class="sreach row d-flex flex-column align-items-center">
-      <div class="main_pic mt-3"></div>
-      <div class="searchForm col-xl-9 d-flex flex-column align-items-center bg-dark pt-5 py-xl-5">
+      <!-- <div class="main_pic mt-3"></div> -->
+      <div class="searchForm col-xl-9 d-flex flex-column align-items-center bg-dark mt-5 pt-5 py-xl-5">
         <h3 class="tital h1 text-light text-center mb-4">餓了嗎？來碗拉麵吧！</h3>
         <div class="w-100 d-flex flex-column flex-lg-row justify-content-center align-items-center mb-3">
             <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="拉麵店、湯底、風味搜尋">
@@ -65,14 +65,64 @@
               <li><a class="dropdown-item" href="#">橫濱家系</a></li>
               <li><a class="dropdown-item" href="#">東京</a></li>
             </ul>
-            <a class="searchBtn btn btn-primary pt-3" id="inputGroupFileAddon04" href="search.html">搜尋</a>
+            <button class="searchBtn btn btn-primary " type="button" id="inputGroupFileAddon04">搜尋</button>
         </div>
       </div>
     </div>
   </section>
-  <section class="newMessage container py-5">
+  <section class="searchResult container py-5">
     <div class="row d-flex justify-content-center">
       <div class="title col-xl-10 position-relative mb-4">
+        <div class="title_box d-flex justify-content-between align-items-center mb-2">
+          <div class="circle position-absolute"></div>
+          <h2 class="title_h2 align-self-end text-light ps-2 pt-2 ms-4">辣麻味噌拉麵 鬼金棒</h2>
+          <hr class="title_hr border-top border-bottom">
+        </div>
+      </div>
+      <div class="card col-xl-10 d-flex flex-row p-5 mb-4">
+        <div class="card-head me-5">
+          <div class="menu-img"></div>
+        </div>
+        <div href="#" class="card-body d-flex flex-column">
+          <ul class="stars d-flex ps-0 my-2">
+            <li class="star"></li>
+            <li class="star"></li>
+            <li class="star"></li>
+            <li class="star"></li>
+            <li class="star"></li>
+          </ul>
+          <ul class="info">
+            <li>營業時間: 11:00 - 22:00</li>
+            <li>營業地址: 106台北市大安區杭州南路二段75號</li>
+            <li>官方網站: <a>https://zh-tw.facebook.com/kikanbotw/</a></li>
+          </ul>
+          <div class="badgeGroup d-flex flex-wrap">
+            <span class="badge rounded-pill bg-primary">豚骨</span>
+            <span class="badge rounded-pill bg-primary">味噌</span>
+            <span class="badge rounded-pill bg-primary">2020年度台灣愛好會金賞</span>
+            <span class="badge rounded-pill bg-primary">2019年度台灣愛好會金賞</span>
+          </div>
+          <div class="member_control d-flex justify-content-between mb-2">
+            <div class="btn btn-lg btn-primary px-5 me-1">蒐藏</div>
+            <div class="btn btn-lg btn-primary px-5">評價</div>
+          </div>
+          <div class="joinMember bg-primary text-light p-2">
+            <div class="title_join">
+              <p class="text-center">現在就加入會員，蒐藏喜歡的拉麵店<br>評價好吃的拉麵，讓更多人去享用</p>
+              <div class="join_btn d-flex align-items-center">
+                <button class="btn btn-dark rounded px-5 mx-2">註冊</button>
+                <p class="m-0">或已是會員? <a href="#" class="btn text-light">登入</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="map" class="col-xl-10"></div>
+    </div>
+  </section>
+  <section class="newMessage container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="title col-xl-10 position-relative mb-2">
         <div class="title_box d-flex justify-content-between align-items-center mb-2">
           <div class="circle position-absolute"></div>
           <h2 class="title_h2 align-self-end text-light ps-2 pt-2 ms-4">最新評價</h2>
@@ -80,7 +130,10 @@
         </div>
         <p class="text-light ps-2 ms-4">有評價？真是太剛好</p>
       </div>
-      <ul class="cards-group col-xl-10 d-flex flex-lg-row flex-wrap justify-content-center justify-content-lg-between">
+      <div class="col-xl-10 row d-flex justify-content-end">
+        <a href="evaluation.html" class="more-message btn col-2 text-light text-end">更多評價 >></a>
+      </div>
+      <ul class="cards-group col-xl-10 d-flex flex-wrap justify-content-center justify-content-lg-between">
         <li class="card p-3 mb-4 mb-lg-5">
           <a href="#" class="card-body">
             <h5 class="card-title text-center mb-3">拉麵店名</h5>
@@ -185,18 +238,6 @@
         </li>
       </ul>
     </div>
-  </section>
-  <section class="remanMap container mb-5">
-    <div class="title position-relative mb-4">
-      <div class="title_box d-flex justify-content-between align-items-center mb-2">
-        <div class="circle position-absolute"></div>
-        <h2 class="title_h2 align-self-end text-light ps-2 pt-2 ms-4">拉麵店在哪裡？</h2>
-        <hr class="title_hr border-top border-bottom">
-      </div>
-      <p class="text-light ps-2 ms-4">開啟定位，看看附近有甚麼好吃的拉麵店</p>
-    </div>
-    <div id="map" class="mb-4"></div>
-    <!-- <iframe class="maps w-100 mb-4" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCPFPRIBU5XHE3wZt3_gig0kV1R_ZmJvY4&q=拉麵" frameborder="0"></iframe> -->
   </section>
   <section class="addMember container-fluid">
     <div class="row">

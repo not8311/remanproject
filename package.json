@@ -25,6 +25,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "leaflet": "^1.9.2"
   }
 }

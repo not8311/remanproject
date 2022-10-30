@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap");
+@import '../../node_modules/leaflet/dist/leaflet.css';
 .navbar .navbar-brand {
   width: 208px;
   height: 63px;
@@ -11,12 +12,16 @@
 .navbar .nav-item .nav-link {
   color: #fff;
   font-weight: normal;
+  line-height: 2.5;
 }
 .navbar .nav-item .nav-link:hover {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #fff;
 }
 .navbar .nav-item .dropdown-toggle::after {
   display: none;
+}
+.navbar .nav-item .dropdown-toggle::after .dropdown-item :hover {
+  background-color: #CE2920;
 }
 .navbar .navbar-toggler {
   border: none;
@@ -51,7 +56,7 @@
   width: 12vw;
 }
 .searchForm .searchBtn {
-  width: 7vw;
+  width: 140px;
 }
 
 @media (max-width: 992px) {
@@ -84,10 +89,13 @@ footer .footer_logo {
   width: 294px;
 }
 
-.newMessage .card {
+.card {
   width: 328px;
 }
-.newMessage .card .user-photo {
+.card .card-title :hover {
+  color: #CE2920;
+}
+.card .user-photo {
   width: 56px;
   height: 56px;
   background: url("../img/ilyuza-mingazova-nouRUMB6lEc-unsplash.jpg") no-repeat;
@@ -95,13 +103,40 @@ footer .footer_logo {
   background-size: cover;
   border-radius: 50%;
 }
-.newMessage .card .star {
+.card .star {
   width: 36px;
   height: 36px;
   background: url("../img/Star 4.png") no-repeat;
 }
-.newMessage .card .stars :nth-child(5) {
+.card .stars :nth-child(5) {
   background: url("../img/Star 5.png") no-repeat;
+}
+.card .info {
+  padding: 0;
+}
+.card .store-img {
+  width: 269px;
+  height: 164px;
+  background: url("../img/frank-from-5-am-ramen-1PrmJze9d7E-unsplash.jpg") no-repeat;
+  background-size: contain;
+}
+.card .menu-img {
+  width: 589px;
+  height: 100%;
+  background: url("../img/frank-from-5-am-ramen-1PrmJze9d7E-unsplash.jpg") no-repeat;
+  background-size: contain;
+  background-position: 0 50%;
+}
+.card .reman-img {
+  width: 300px;
+  height: 210px;
+  background: url("../img/frank-from-5-am-ramen-1PrmJze9d7E-unsplash.jpg") no-repeat;
+  background-size: contain;
+  background-position: 0 50%;
+}
+.card .badge {
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 992px) {
@@ -121,6 +156,10 @@ footer .footer_logo {
     width: 40%;
   }
 }
+.more-message {
+  width: 20px;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11057,11 +11096,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
+.bannerBg {
   background-image: url("../img/banner_bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 912px;
+  font-family: "Noto Serif TC", serif;
+}
+
+.bannerBgSmall {
+  background-image: url("../img/banner_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 400px;
   font-family: "Noto Serif TC", serif;
 }
 
@@ -11078,6 +11125,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 section .circle {
   width: 60px;
   height: 60px;
@@ -11090,6 +11141,10 @@ section .title_h2 {
   z-index: 100;
 }
 section .title_hr {
-  width: 80%;
+  width: 65%;
   height: 7px;
+}
+
+#map {
+  height: 400px;
 }/*# sourceMappingURL=all.css.map */
